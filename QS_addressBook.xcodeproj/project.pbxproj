@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3685C4A51D20FDC3000D1845 /* JRAdressInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3685C4A41D20FDC3000D1845 /* JRAdressInfo.m */; };
 		368B90111D20CA7800A5060D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 368B90101D20CA7800A5060D /* main.m */; };
 		368B90141D20CA7800A5060D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 368B90131D20CA7800A5060D /* AppDelegate.m */; };
 		368B90171D20CA7900A5060D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 368B90161D20CA7900A5060D /* ViewController.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3685C4A31D20FDC3000D1845 /* JRAdressInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRAdressInfo.h; sourceTree = "<group>"; };
+		3685C4A41D20FDC3000D1845 /* JRAdressInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRAdressInfo.m; sourceTree = "<group>"; };
 		368B900C1D20CA7700A5060D /* QS_addressBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QS_addressBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		368B90101D20CA7800A5060D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		368B90121D20CA7800A5060D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -106,6 +109,8 @@
 			children = (
 				368B90121D20CA7800A5060D /* AppDelegate.h */,
 				368B90131D20CA7800A5060D /* AppDelegate.m */,
+				3685C4A31D20FDC3000D1845 /* JRAdressInfo.h */,
+				3685C4A41D20FDC3000D1845 /* JRAdressInfo.m */,
 				368B90421D20CA8500A5060D /* JRAddressBook.h */,
 				368B90431D20CA8500A5060D /* JRAddressBook.m */,
 				368B90151D20CA7800A5060D /* ViewController.h */,
@@ -275,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3685C4A51D20FDC3000D1845 /* JRAdressInfo.m in Sources */,
 				368B90171D20CA7900A5060D /* ViewController.m in Sources */,
 				368B90141D20CA7800A5060D /* AppDelegate.m in Sources */,
 				368B90111D20CA7800A5060D /* main.m in Sources */,

@@ -7,15 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "JRAdressInfo.h"
+#import <UIKit/UIKit.h>
 typedef NS_ENUM(NSInteger,JRAddressBookStatus)
 {
     JRAddressBookNotDetermined = 0,
     JRAddressBookAuthorized,
     JRAddressBookOther
 };
+
 @interface JRAddressBook : NSObject
 @property (nonatomic , strong) NSMutableArray * addressPerson;
 @property (nonatomic , strong) NSMutableArray * addressPhone;
+@property (nonatomic , strong) NSMutableArray * personInfoArr;
 
 @property (nonatomic , assign) JRAddressBookStatus addressBookStatus;
 + (instancetype)defaultBook;
@@ -24,5 +28,8 @@ typedef NS_ENUM(NSInteger,JRAddressBookStatus)
 
 - (NSArray *)addressNameArray;
 - (NSArray *)addressPhoneArray;
-- (NSArray *)personInfoArray;
+- (NSMutableArray *)personInfoArr;
+
 @end
+
+
