@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		368B90111D20CA7800A5060D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 368B90101D20CA7800A5060D /* main.m */; };
+		368B90141D20CA7800A5060D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 368B90131D20CA7800A5060D /* AppDelegate.m */; };
+		368B90171D20CA7900A5060D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 368B90161D20CA7900A5060D /* ViewController.m */; };
+		368B901A1D20CA7900A5060D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 368B90181D20CA7900A5060D /* Main.storyboard */; };
+		368B901C1D20CA7900A5060D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 368B901B1D20CA7900A5060D /* Assets.xcassets */; };
+		368B901F1D20CA7900A5060D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 368B901D1D20CA7900A5060D /* LaunchScreen.storyboard */; };
+		368B902A1D20CA7900A5060D /* QS_addressBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 368B90291D20CA7900A5060D /* QS_addressBookTests.m */; };
+		368B90351D20CA7900A5060D /* QS_addressBookUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 368B90341D20CA7900A5060D /* QS_addressBookUITests.m */; };
+		368B90441D20CA8500A5060D /* JRAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 368B90431D20CA8500A5060D /* JRAddressBook.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		368B90261D20CA7900A5060D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 368B90041D20CA7700A5060D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 368B900B1D20CA7700A5060D;
+			remoteInfo = QS_addressBook;
+		};
+		368B90311D20CA7900A5060D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 368B90041D20CA7700A5060D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 368B900B1D20CA7700A5060D;
+			remoteInfo = QS_addressBook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		368B900C1D20CA7700A5060D /* QS_addressBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QS_addressBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		368B90101D20CA7800A5060D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		368B90121D20CA7800A5060D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		368B90131D20CA7800A5060D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		368B90151D20CA7800A5060D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		368B90161D20CA7900A5060D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		368B90191D20CA7900A5060D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		368B901B1D20CA7900A5060D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		368B901E1D20CA7900A5060D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		368B90201D20CA7900A5060D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		368B90251D20CA7900A5060D /* QS_addressBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QS_addressBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		368B90291D20CA7900A5060D /* QS_addressBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QS_addressBookTests.m; sourceTree = "<group>"; };
+		368B902B1D20CA7900A5060D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		368B90301D20CA7900A5060D /* QS_addressBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QS_addressBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		368B90341D20CA7900A5060D /* QS_addressBookUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QS_addressBookUITests.m; sourceTree = "<group>"; };
+		368B90361D20CA7900A5060D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		368B90421D20CA8500A5060D /* JRAddressBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRAddressBook.h; sourceTree = "<group>"; };
+		368B90431D20CA8500A5060D /* JRAddressBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRAddressBook.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		368B90091D20CA7700A5060D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		368B90221D20CA7900A5060D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		368B902D1D20CA7900A5060D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		368B90031D20CA7700A5060D = {
+			isa = PBXGroup;
+			children = (
+				368B900E1D20CA7800A5060D /* QS_addressBook */,
+				368B90281D20CA7900A5060D /* QS_addressBookTests */,
+				368B90331D20CA7900A5060D /* QS_addressBookUITests */,
+				368B900D1D20CA7700A5060D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		368B900D1D20CA7700A5060D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				368B900C1D20CA7700A5060D /* QS_addressBook.app */,
+				368B90251D20CA7900A5060D /* QS_addressBookTests.xctest */,
+				368B90301D20CA7900A5060D /* QS_addressBookUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		368B900E1D20CA7800A5060D /* QS_addressBook */ = {
+			isa = PBXGroup;
+			children = (
+				368B90121D20CA7800A5060D /* AppDelegate.h */,
+				368B90131D20CA7800A5060D /* AppDelegate.m */,
+				368B90421D20CA8500A5060D /* JRAddressBook.h */,
+				368B90431D20CA8500A5060D /* JRAddressBook.m */,
+				368B90151D20CA7800A5060D /* ViewController.h */,
+				368B90161D20CA7900A5060D /* ViewController.m */,
+				368B90181D20CA7900A5060D /* Main.storyboard */,
+				368B901B1D20CA7900A5060D /* Assets.xcassets */,
+				368B901D1D20CA7900A5060D /* LaunchScreen.storyboard */,
+				368B90201D20CA7900A5060D /* Info.plist */,
+				368B900F1D20CA7800A5060D /* Supporting Files */,
+			);
+			path = QS_addressBook;
+			sourceTree = "<group>";
+		};
+		368B900F1D20CA7800A5060D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				368B90101D20CA7800A5060D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		368B90281D20CA7900A5060D /* QS_addressBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				368B90291D20CA7900A5060D /* QS_addressBookTests.m */,
+				368B902B1D20CA7900A5060D /* Info.plist */,
+			);
+			path = QS_addressBookTests;
+			sourceTree = "<group>";
+		};
+		368B90331D20CA7900A5060D /* QS_addressBookUITests */ = {
+			isa = PBXGroup;
+			children = (
+				368B90341D20CA7900A5060D /* QS_addressBookUITests.m */,
+				368B90361D20CA7900A5060D /* Info.plist */,
+			);
+			path = QS_addressBookUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		368B900B1D20CA7700A5060D /* QS_addressBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 368B90391D20CA7900A5060D /* Build configuration list for PBXNativeTarget "QS_addressBook" */;
+			buildPhases = (
+				368B90081D20CA7700A5060D /* Sources */,
+				368B90091D20CA7700A5060D /* Frameworks */,
+				368B900A1D20CA7700A5060D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QS_addressBook;
+			productName = QS_addressBook;
+			productReference = 368B900C1D20CA7700A5060D /* QS_addressBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		368B90241D20CA7900A5060D /* QS_addressBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 368B903C1D20CA7900A5060D /* Build configuration list for PBXNativeTarget "QS_addressBookTests" */;
+			buildPhases = (
+				368B90211D20CA7900A5060D /* Sources */,
+				368B90221D20CA7900A5060D /* Frameworks */,
+				368B90231D20CA7900A5060D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				368B90271D20CA7900A5060D /* PBXTargetDependency */,
+			);
+			name = QS_addressBookTests;
+			productName = QS_addressBookTests;
+			productReference = 368B90251D20CA7900A5060D /* QS_addressBookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		368B902F1D20CA7900A5060D /* QS_addressBookUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 368B903F1D20CA7900A5060D /* Build configuration list for PBXNativeTarget "QS_addressBookUITests" */;
+			buildPhases = (
+				368B902C1D20CA7900A5060D /* Sources */,
+				368B902D1D20CA7900A5060D /* Frameworks */,
+				368B902E1D20CA7900A5060D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				368B90321D20CA7900A5060D /* PBXTargetDependency */,
+			);
+			name = QS_addressBookUITests;
+			productName = QS_addressBookUITests;
+			productReference = 368B90301D20CA7900A5060D /* QS_addressBookUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		368B90041D20CA7700A5060D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = QS;
+				TargetAttributes = {
+					368B900B1D20CA7700A5060D = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					368B90241D20CA7900A5060D = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 368B900B1D20CA7700A5060D;
+					};
+					368B902F1D20CA7900A5060D = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 368B900B1D20CA7700A5060D;
+					};
+				};
+			};
+			buildConfigurationList = 368B90071D20CA7700A5060D /* Build configuration list for PBXProject "QS_addressBook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 368B90031D20CA7700A5060D;
+			productRefGroup = 368B900D1D20CA7700A5060D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				368B900B1D20CA7700A5060D /* QS_addressBook */,
+				368B90241D20CA7900A5060D /* QS_addressBookTests */,
+				368B902F1D20CA7900A5060D /* QS_addressBookUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		368B900A1D20CA7700A5060D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				368B901F1D20CA7900A5060D /* LaunchScreen.storyboard in Resources */,
+				368B901C1D20CA7900A5060D /* Assets.xcassets in Resources */,
+				368B901A1D20CA7900A5060D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		368B90231D20CA7900A5060D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		368B902E1D20CA7900A5060D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		368B90081D20CA7700A5060D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				368B90171D20CA7900A5060D /* ViewController.m in Sources */,
+				368B90141D20CA7800A5060D /* AppDelegate.m in Sources */,
+				368B90111D20CA7800A5060D /* main.m in Sources */,
+				368B90441D20CA8500A5060D /* JRAddressBook.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		368B90211D20CA7900A5060D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				368B902A1D20CA7900A5060D /* QS_addressBookTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		368B902C1D20CA7900A5060D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				368B90351D20CA7900A5060D /* QS_addressBookUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		368B90271D20CA7900A5060D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 368B900B1D20CA7700A5060D /* QS_addressBook */;
+			targetProxy = 368B90261D20CA7900A5060D /* PBXContainerItemProxy */;
+		};
+		368B90321D20CA7900A5060D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 368B900B1D20CA7700A5060D /* QS_addressBook */;
+			targetProxy = 368B90311D20CA7900A5060D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		368B90181D20CA7900A5060D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				368B90191D20CA7900A5060D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		368B901D1D20CA7900A5060D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				368B901E1D20CA7900A5060D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		368B90371D20CA7900A5060D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		368B90381D20CA7900A5060D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		368B903A1D20CA7900A5060D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = QS_addressBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "RainHeart.QS-addressBook";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		368B903B1D20CA7900A5060D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = QS_addressBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "RainHeart.QS-addressBook";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		368B903D1D20CA7900A5060D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = QS_addressBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "RainHeart.QS-addressBookTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QS_addressBook.app/QS_addressBook";
+			};
+			name = Debug;
+		};
+		368B903E1D20CA7900A5060D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = QS_addressBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "RainHeart.QS-addressBookTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QS_addressBook.app/QS_addressBook";
+			};
+			name = Release;
+		};
+		368B90401D20CA7900A5060D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = QS_addressBookUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "RainHeart.QS-addressBookUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = QS_addressBook;
+			};
+			name = Debug;
+		};
+		368B90411D20CA7900A5060D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = QS_addressBookUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "RainHeart.QS-addressBookUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = QS_addressBook;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		368B90071D20CA7700A5060D /* Build configuration list for PBXProject "QS_addressBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				368B90371D20CA7900A5060D /* Debug */,
+				368B90381D20CA7900A5060D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		368B90391D20CA7900A5060D /* Build configuration list for PBXNativeTarget "QS_addressBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				368B903A1D20CA7900A5060D /* Debug */,
+				368B903B1D20CA7900A5060D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		368B903C1D20CA7900A5060D /* Build configuration list for PBXNativeTarget "QS_addressBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				368B903D1D20CA7900A5060D /* Debug */,
+				368B903E1D20CA7900A5060D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		368B903F1D20CA7900A5060D /* Build configuration list for PBXNativeTarget "QS_addressBookUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				368B90401D20CA7900A5060D /* Debug */,
+				368B90411D20CA7900A5060D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 368B90041D20CA7700A5060D /* Project object */;
+}
