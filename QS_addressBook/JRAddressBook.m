@@ -165,7 +165,6 @@
             CFDataRef image = ABPersonCopyImageData(record);
             NSData * imageData = (__bridge_transfer NSData *)image;
             info.avartar = imageData;
-
             [_personInfoArr addObject:info];
         }
         CFRelease(personArr);
