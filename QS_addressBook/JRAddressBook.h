@@ -24,4 +24,5 @@ typedef NS_ENUM(NSInteger,JRAddressBookStatus)
 
 - (NSArray *)addressNameArray;
 - (NSArray *)addressPhoneArray;
+- (NSArray *)personInfoArray;
 @end

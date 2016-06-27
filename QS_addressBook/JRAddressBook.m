@@ -90,6 +90,10 @@
     CFRelease(book);
     return phoneNum;
 }
+- (NSArray *)personInfoArray
+{
+    
+}
 + (void)requestAuthorize:(void(^)())notDetermined authorized:(void(^)())authorized other:(void(^)())other;
 {
     if ([self addressBookStatus] == JRAddressBookNotDetermined) {
