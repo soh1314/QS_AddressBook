@@ -26,6 +26,7 @@
 {
     if (!_addressPerson) {
         _addressPerson = [NSMutableArray array];
+        [_addressPerson addObjectsFromArray:[self addressNameArray]];
     }
     return _addressPerson;
 }
@@ -33,18 +34,22 @@
 {
     if (!_addressPhone) {
         _addressPhone = [NSMutableArray array];
-        [_addressPhone addObjectsFromArray:[self getAddressPhoneGroup]];
+        
     }
     return _addressPhone;
 }
-- (NSArray *)getAddressPhoneGroup
+- (NSArray *)addressNameArray
 {
-    ABAddressBookRef book = ABAddressBookCreate();
-    CFArrayRef person = ABAddressBookCopyArrayOfAllPeople(book);
+    dispatch_semaphore_t sema = dispatch_semaphore_create(0);
+    ABAddressBookRef book = ABAddressBookCreateWithOptions(NULL, NULL);
+    ABAddressBookRequestAccessWithCompletion(book, ^(bool granted, CFErrorRef error){dispatch_semaphore_signal(sema);});
+    dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER);
+    CFArrayRef personArr = ABAddressBookCopyArrayOfAllPeople(book);
     CFIndex count = ABAddressBookGetPersonCount(book);
+
     NSMutableArray * tem = [NSMutableArray array];
     for (int i = 0; i < count; i++) {
-        ABRecordRef person = CFArrayGetValueAtIndex(person, i);
+        ABRecordRef person = CFArrayGetValueAtIndex(personArr, i);
         NSString * personLastName = (__bridge_transfer NSString *)ABRecordCopyValue(person, kABPersonLastNameProperty);
         NSString * personFirstName = (__bridge_transfer NSString *)ABRecordCopyValue(person, kABPersonFirstNameProperty);
        CFStringRef fullName = ABRecordCopyCompositeName(person);
@@ -58,7 +63,12 @@
         }
         [tem addObject:personName];
     }
+    CFRelease(personArr);
+    CFRelease(book);
     return tem;
+}
+- (NSArray *)addressPhoneArray
+{
     
 }
 + (void)requestAuthorize:(void(^)())notDetermined authorized:(void(^)())authorized other:(void(^)())other;

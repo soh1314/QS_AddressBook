@@ -21,4 +21,7 @@ typedef NS_ENUM(NSInteger,JRAddressBookStatus)
 + (instancetype)defaultBook;
 + (JRAddressBookStatus)addressBookStatus;
 + (void)requestAuthorize:(void(^)())notDetermined authorized:(void(^)())authorized other:(void(^)())other;
+
+- (NSArray *)addressNameArray;
+- (NSArray *)addressPhoneArray;
 @end
