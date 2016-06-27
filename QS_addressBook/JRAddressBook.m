@@ -69,7 +69,26 @@
 }
 - (NSArray *)addressPhoneArray
 {
-    
+    dispatch_semaphore_t sema = dispatch_semaphore_create(0);
+    ABAddressBookRef book = ABAddressBookCreateWithOptions(NULL, NULL);
+    ABAddressBookRequestAccessWithCompletion(book, ^(bool granted, CFErrorRef error){dispatch_semaphore_signal(sema);});
+    dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER);
+    CFArrayRef personArr = ABAddressBookCopyArrayOfAllPeople(book);
+    CFIndex count = ABAddressBookGetPersonCount(book);
+    NSMutableArray * phoneNum = [NSMutableArray array];
+    for (int i = 0; i < count; i++) {
+        ABRecordRef person = CFArrayGetValueAtIndex(personArr, i);
+        ABMultiValueRef phoneRef = ABRecordCopyValue(person, kABPersonPhoneProperty);
+        CFIndex phoneCount = ABMultiValueGetCount(phoneRef);
+        for (int i = 0; i < phoneCount; i++) {
+            NSString *phoneValue = (__bridge_transfer NSString *)ABMultiValueCopyValueAtIndex(phoneRef,i);
+            [phoneNum addObject:phoneValue];
+        }
+        CFRelease(phoneRef);
+    }
+    CFRelease(personArr);
+    CFRelease(book);
+    return phoneNum;
 }
 + (void)requestAuthorize:(void(^)())notDetermined authorized:(void(^)())authorized other:(void(^)())other;
 {
@@ -77,10 +96,7 @@
         ABAddressBookRef book = ABAddressBookCreate();
         ABAddressBookRequestAccessWithCompletion(book, ^(bool granted, CFErrorRef error) {
             if (granted) {
-                ABAddressBookRef bookTem = ABAddressBookCreate();
-                CFIndex personCount = ABAddressBookGetPersonCount(bookTem);
-                NSLog(@"%ld",personCount);
-                CFRelease(bookTem);
+
                 notDetermined();
             }
         });

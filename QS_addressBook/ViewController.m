@@ -16,16 +16,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    [JRAddressBook requestAuthorize:^{
-//        NSLog(@"notDetermined");
-//    } authorized:^{
-//        NSLog(@"authorize");
-//    } other:^{
-//        NSLog(@"other");
-//    }];
+    [JRAddressBook requestAuthorize:^{
+        NSLog(@"notDetermined");
+    } authorized:^{
+        NSLog(@"authorize");
+    } other:^{
+        NSLog(@"other");
+    }];
     // Do any additional setup after loading the view, typically from a nib.
-    NSArray * tem = [[JRAddressBook defaultBook] getAddressPhoneGroup];
-    NSLog(@"%@",tem[0]);
+    NSArray * tem = [[JRAddressBook defaultBook] addressNameArray];
+    NSLog(@"%@",tem[1]);
+    NSArray * tem1 = [[JRAddressBook defaultBook] addressPhoneArray];
+    NSLog(@"%@",tem1[1]);
 }
 
 - (void)didReceiveMemoryWarning {

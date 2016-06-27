@@ -504,6 +504,7 @@
 				368B903B1D20CA7900A5060D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		368B903C1D20CA7900A5060D /* Build configuration list for PBXNativeTarget "QS_addressBookTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +513,7 @@
 				368B903E1D20CA7900A5060D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		368B903F1D20CA7900A5060D /* Build configuration list for PBXNativeTarget "QS_addressBookUITests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +522,7 @@
 				368B90411D20CA7900A5060D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
